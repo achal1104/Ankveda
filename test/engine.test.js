@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert';
+import {calculateNameNumber as c,translit,METHODS} from '../src/lib/engine.js';
+import {N,T,SX} from '../src/data/content.js';
+test('tables',()=>{const CH={1:'AIJQY',2:'BKR',3:'CGLS',4:'DMT',5:'EHNX',6:'UVW',7:'OZ',8:'FP'};
+  for(const n in CH)for(const l of CH[n])assert.equal(METHODS.chaldean[l],+n);assert.equal(Object.keys(METHODS.pythagorean).length,26)});
+test('examples',()=>{assert.equal(c('ANK','pythagorean').number,8);assert.equal(c('RAHUL','pythagorean').number,6);
+  const r=c('RAHUL','chaldean');assert.equal(r.total,17);assert.equal(r.number,8)});
+test('input handling',()=>{assert.equal(c("  o'neil-sm.ith ",'chaldean').total,c('ONEILSMITH','chaldean').total);
+  assert.equal(c('').error,'empty');assert.equal(c('A1').error,'bad');assert.equal(c('राहुल').error,'deva');assert.equal(c('---').error,'none')});
+test('translit and content',()=>{assert.equal(translit('राहुल'),'rahul');
+  for(const l of['en','mr']){assert.equal(N[l].length,9);assert.ok(T[l].faqs.length>=6&&SX[l].frees.length)}});

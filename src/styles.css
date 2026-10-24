@@ -1,0 +1,201 @@
+
+:root{--pri:#7A1F3D;--pri2:#A03556;--sec:#D4A017;--bg:#FFFAF6;--sf:#fff;--tx:#2B2226;--mu:#7A6B70;--bd:#EFE0DC;--ok:#2F7D58;--ss:#FBF0CF;--ps:#F8E8EC;--warm:#FFF8E6;--foot:#F7ECE8;--rgb:122,31,61;--wash:251,226,200}
+
+.pl{display:block;color:var(--pri2);font-weight:700;margin:-6px 0 8px}
+*{box-sizing:border-box}html{scroll-padding-top:70px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,"Noto Sans Devanagari",system-ui,sans-serif}
+body.mr{line-height:1.85}
+a{color:var(--pri)}h1,h2,h3{line-height:1.25;margin:0 0 .5em;color:var(--pri)}
+h1{font-size:clamp(2rem,5vw,3.2rem)}h2{font-size:clamp(1.5rem,3vw,2.1rem)}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}section{padding:56px 0}
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--bd)}
+.bar{display:flex;align-items:center;gap:16px;min-height:64px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:1.3rem;color:var(--pri);text-decoration:none}
+nav{display:flex;gap:18px;margin-left:auto;align-items:center}nav a{text-decoration:none;color:var(--tx);font-size:.95rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:12px;border:1px solid var(--pri);background:var(--pri);color:#fff;font:600 1rem inherit;font-family:inherit;cursor:pointer;text-decoration:none}
+.btn.o{background:transparent;color:var(--pri)}.btn:hover{opacity:.9}
+:focus-visible{outline:3px solid var(--sec);outline-offset:2px}
+.lang{display:flex;border:1px solid var(--bd);border-radius:10px;overflow:hidden}.lang button{border:0;background:var(--sf);padding:8px 12px;cursor:pointer;font:inherit;font-size:.9rem;min-height:40px}.lang .on{background:var(--pri);color:#fff}
+#mb{display:none;background:none;border:1px solid var(--bd);border-radius:10px;min-height:44px;padding:0 12px;font-size:1.2rem;margin-left:auto}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.eye{color:var(--pri);font-weight:700;letter-spacing:.08em;font-size:.8rem}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:18px;padding:24px;box-shadow:0 4px 18px rgba(var(--rgb),.06)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.chip{border:1px solid var(--bd);border-radius:12px;padding:6px 10px;background:var(--bg);text-align:center;min-width:44px}.chip b{display:block;color:var(--pri);font-size:1.2rem}
+.big{font-size:4.5rem;font-weight:700;color:var(--sec);line-height:1}
+.demo{border-top:4px solid var(--sec);animation:up .6s both}@keyframes up{from{opacity:0;transform:translateY(10px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--pri);color:#fff;font-weight:700}
+label{display:block;font-weight:600;margin-bottom:6px}
+input,select{width:100%;min-height:48px;padding:0 14px;border:1px solid var(--bd);border-radius:12px;font:inherit;background:#fff;color:var(--tx)}
+.row{display:grid;gap:12px;grid-template-columns:1fr 1fr}.err{color:#a33;margin:8px 0}.note{background:var(--ss);border-radius:12px;padding:10px 14px;font-size:.92rem}
+.res{border-left:5px solid var(--sec);margin-top:24px}
+details{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:14px 18px;margin-bottom:10px}summary{cursor:pointer;font-weight:600;min-height:28px}
+footer{border-top:1px solid var(--bd);background:var(--sf);padding:36px 0;font-size:.92rem;color:var(--mu)}footer .grid{align-items:start}footer a{display:block;margin:4px 0}
+.mu{color:var(--mu)}ul{padding-left:20px}
+@media(max-width:800px){.hero,.row{grid-template-columns:1fr}#mb{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;padding:16px 20px;border-bottom:1px solid var(--bd)}nav.open{display:flex}.bar{position:relative}.logo+.lang{margin-left:auto}#mb{margin-left:0}}
+body{background:radial-gradient(900px 420px at 88% -60px,rgba(var(--wash),.8),transparent),var(--bg)}
+header{backdrop-filter:blur(10px);background:rgba(255,252,245,.9)}
+nav a:not(.btn){padding:8px 12px;border-radius:999px;transition:.2s}nav a:not(.btn):hover{background:var(--ps);color:var(--pri)}
+.btn{border-radius:999px;box-shadow:0 6px 16px rgba(var(--rgb),.22);transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);opacity:1}.btn.o{box-shadow:none;background:#fff}
+h1{font-size:clamp(2.2rem,5.5vw,3.6rem);letter-spacing:-.02em}
+h2{position:relative;padding-bottom:16px}h2:after{content:"";position:absolute;left:0;bottom:0;width:48px;height:4px;border-radius:4px;background:var(--sec)}
+.eye{display:inline-block;background:var(--ss);padding:6px 14px;border-radius:999px;margin-bottom:14px}
+.card{border-radius:20px;transition:transform .25s,box-shadow .25s}.grid .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(var(--rgb),.12)}
+main>section:nth-of-type(even){background:#fff;border-block:1px solid var(--bd)}.hs{padding-top:72px}
+.demo{position:relative;overflow:hidden;padding:30px}.mand{position:absolute;right:-70px;top:-70px;width:240px;opacity:.4;animation:spin 60s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.demo .chip{background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.n{background:linear-gradient(135deg,var(--pri),var(--pri2));box-shadow:0 6px 14px rgba(var(--rgb),.25)}
+.ic{display:inline-grid;place-items:center;width:52px;height:52px;border-radius:16px;background:var(--ss);font-size:1.5rem;margin-bottom:10px}
+.why{display:flex;gap:12px;align-items:center;font-weight:600}.ck{display:grid;place-items:center;flex:none;width:30px;height:30px;border-radius:50%;background:#E3F2EA;color:var(--ok)}
+.band{max-width:1060px;margin:0 auto;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;border-radius:24px;padding:48px 24px;text-align:center}.band h2{color:#fff}.band h2:after{left:50%;margin-left:-24px}.band .btn{background:var(--sec);border-color:var(--sec);color:var(--tx)}
+.res{background:linear-gradient(180deg,var(--warm),#fff)}
+input:focus,select:focus{border-color:var(--pri);box-shadow:0 0 0 4px rgba(var(--rgb),.12);outline:none}
+details[open]{box-shadow:0 6px 20px rgba(var(--rgb),.08);border-color:var(--sec)}
+footer{background:var(--foot)}
+.hs{background:linear-gradient(135deg,var(--pri) 0%,var(--pri2) 62%,#7b5ea7 135%);color:#fff;padding:84px 0 110px;position:relative;overflow:hidden;border:0}
+.hs:before{content:"";position:absolute;width:560px;height:560px;right:-140px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(var(--wash),.5),transparent 65%)}
+.hs .hero{position:relative;z-index:1}.hs .hero>div:first-child h1{color:#fff}.hs .hero>div:first-child .mu{color:#fff;opacity:.9}.hs .eye{background:rgba(255,255,255,.16);color:#fff}
+.hs .btn{background:var(--sec);border-color:var(--sec);color:#1d1d1d}.hs .btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.hs .demo{background:#fff;color:var(--tx);box-shadow:0 24px 60px rgba(0,0,0,.25);border-top:5px solid var(--sec)}
+.fl{position:absolute;font-weight:700;color:rgba(255,255,255,.13);font-size:5.5rem;line-height:1;animation:fl 7s ease-in-out infinite;pointer-events:none}@keyframes fl{50%{transform:translateY(-18px)}}
+.hs+#calc{padding-top:0}.hs+#calc .card{margin-top:-64px;position:relative;z-index:2}
+#calc .card{padding:34px;box-shadow:0 20px 50px rgba(var(--rgb),.14)}
+#how .n{width:58px;height:58px;font-size:1.5rem}#how .card{border-top:4px solid var(--sec)}
+#nm .card:nth-child(1){--c:#E8892B}#nm .card:nth-child(2){--c:#3B82C4}#nm .card:nth-child(3){--c:#D9A21B}#nm .card:nth-child(4){--c:#3C9D6B}#nm .card:nth-child(5){--c:#2FA3A0}#nm .card:nth-child(6){--c:#D4567A}#nm .card:nth-child(7){--c:#7B5EA7}#nm .card:nth-child(8){--c:#C46A2F}#nm .card:nth-child(9){--c:#B03A48}
+.nc{position:relative;overflow:hidden;border-top:5px solid var(--c)}.nc .n{background:var(--c)}.nc:after{content:attr(data-n);position:absolute;right:14px;bottom:-22px;font-size:6.5rem;font-weight:700;color:var(--c);opacity:.12;line-height:1}
+.mt{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}.tr{display:flex;align-items:center;gap:12px;padding:14px;letter-spacing:.06em}
+.band{position:relative;overflow:hidden;box-shadow:0 20px 50px rgba(var(--rgb),.25)}
+.tr2{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between}.tr2 b{letter-spacing:.06em}
+.fq{background:var(--sf);border:1px solid var(--bd);border-radius:14px;margin-bottom:10px;overflow:hidden}.fqb{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;min-height:56px;padding:12px 18px;border:0;background:none;font:600 1rem inherit;font-family:inherit;color:var(--tx);cursor:pointer;text-align:left}.fqb span{font-size:1.5rem;color:var(--pri);transition:transform .2s}.fqa{display:none;padding:0 18px 16px}.fqa p{margin:0}.fq.open{border-color:var(--sec)}.fq.open .fqa{display:block}.fq.open .fqb span{transform:rotate(45deg)}.hs .eye{margin:0 8px 8px 0}
+nav a{white-space:nowrap}header .w{max-width:1280px}.logo,.lang,#mb{flex:none}nav{gap:14px}nav a{font-size:.9rem}nav a:not(.btn){padding:8px 8px}nav .btn{min-height:40px;padding:0 16px;font-size:.9rem;color:#fff}@media(max-width:1180px){nav>.btn{display:none}}@media(max-width:800px){.lang{margin-left:auto}nav>.btn{display:inline-flex}}
+@media print{header,footer,.np{display:none}}
+
+/* ============================================================
+   AnkVeda – responsive overrides
+   Paste at the VERY END of your existing stylesheet
+   (or import it after the current CSS) so it wins the cascade.
+   Also make sure <head> has:
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   ============================================================ */
+
+/* ---------- 0. Root-cause fixes (stop sideways overflow) ---------- */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:clip}
+body{overflow-x:clip;min-width:320px}   /* clip keeps sticky header working */
+img,svg,video,canvas,iframe{max-width:100%;height:auto}
+.w{width:100%;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+/* grid/flex children may shrink below their content width */
+.hero>*,.grid>*,.row>*,.mt>*,.bar>*,.tr2>*{min-width:0}
+h1,h2,h3,p,summary,.fqb{overflow-wrap:break-word;word-break:normal}
+/* cards never force a column wider than the screen */
+.grid{grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr))}
+.mt{grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr))}
+.btn{white-space:normal;text-align:center;height:auto;padding-top:10px;padding-bottom:10px}
+
+/* ---------- 1. Large screens (≥1400px) ---------- */
+@media (min-width:1400px){
+  .w{max-width:1240px}
+  header .w{max-width:1360px}
+  body{font-size:17px}
+}
+@media (min-width:1900px){
+  .w{max-width:1400px}
+  header .w{max-width:1500px}
+}
+
+/* ---------- 2. Laptops / small desktops / tablets landscape (≤1024px) ----------
+   Switch to the hamburger earlier so the nav never overflows the bar */
+@media (max-width:1024px){
+  #mb{display:block;margin-left:0}
+  .lang{margin-left:auto}
+  .bar{position:relative}
+  nav{display:none;position:absolute;top:100%;left:0;right:0;margin-left:0;
+      flex-direction:column;align-items:stretch;gap:4px;
+      padding:14px 20px 18px;background:var(--bg);
+      border-bottom:1px solid var(--bd);
+      max-height:calc(100vh - 70px);max-height:calc(100dvh - 70px);overflow-y:auto}
+  nav.open{display:flex}
+  nav a:not(.btn){padding:12px 14px}
+  nav>.btn{display:inline-flex}
+  .hs{padding:64px 0 96px}
+}
+
+/* ---------- 3. Tablets portrait (≤800px) ---------- */
+@media (max-width:800px){
+  section{padding:44px 0}
+  .hero{grid-template-columns:minmax(0,1fr);gap:28px}
+  .row{grid-template-columns:minmax(0,1fr)}
+  .hs .hero>div:first-child{text-align:left}
+  .fl{font-size:4rem}
+}
+
+/* ---------- 4. Phones (≤600px) ---------- */
+@media (max-width:600px){
+  .w{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+  section{padding:36px 0}
+
+  /* header: everything must fit in 320–400px */
+  .bar{gap:8px;min-height:60px}
+  .logo{flex:0 1 auto;min-width:0;font-size:1.15rem;gap:6px;white-space:nowrap;overflow:hidden}
+  .lang{flex:none}
+  .lang button{padding:6px 10px;font-size:.85rem;min-height:40px}
+  #mb{flex:none;padding:0 10px}
+  nav{padding:12px 16px 16px}
+
+  /* hero */
+  .hs{padding:40px 0 84px}
+  .hs:before{width:320px;height:320px;right:-120px;top:-120px}
+  .fl{display:none}
+  h1{font-size:clamp(1.8rem,8.2vw,2.3rem);letter-spacing:-.01em}
+  h2{font-size:clamp(1.35rem,6vw,1.7rem)}
+  .eye{font-size:.72rem;padding:5px 12px}
+  .hs .btn,.hs .btn.o{width:100%}
+  .demo{padding:20px}
+  .mand{width:150px;right:-50px;top:-50px}
+  .big{font-size:3.4rem}
+  .chip{min-width:40px;padding:5px 8px}
+
+  /* calculator overlaps hero less on small screens */
+  .hs+#calc .card{margin-top:-52px}
+  #calc .card{padding:20px 16px}
+  .card{padding:18px;border-radius:16px}
+  .res{margin-top:18px}
+
+  /* sections */
+  .band{padding:36px 18px;border-radius:20px}
+  .tr,.tr2{padding:12px}
+  .fqb{padding:12px 14px;min-height:52px}
+  .fqa{padding:0 14px 14px}
+  details{padding:12px 14px}
+  footer{padding:28px 0}
+  footer .grid{grid-template-columns:minmax(0,1fr);gap:20px}
+}
+
+/* ---------- 5. Very small phones (≤360px, e.g. Galaxy A-series / SE) ---------- */
+@media (max-width:360px){
+  .logo{font-size:1.05rem}
+  .lang button{padding:6px 8px;font-size:.8rem}
+  h1{font-size:1.7rem}
+  .big{font-size:3rem}
+  .btn{padding-left:14px;padding-right:14px}
+}
+@media (max-width:320px){
+  .logo span{display:none}   /* keep only the icon if space runs out */
+}
+
+/* ---------- 6. Short landscape phones ---------- */
+@media (max-height:480px) and (orientation:landscape){
+  header{position:static}
+  .hs{padding:32px 0 70px}
+  nav{max-height:none}
+}
+
+/* ---------- 7. Touch devices: no sticky hover lift ---------- */
+@media (hover:none){
+  .grid .card:hover,.btn:hover{transform:none}
+}
+
+/* ---------- 8. Reduced motion (extra safety) ---------- */
+@media (prefers-reduced-motion:reduce){
+  .mand,.fl{animation:none!important}
+}
